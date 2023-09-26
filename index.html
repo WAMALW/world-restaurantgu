@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="uft-8"> 
+     <meta name="viewport" content="width=device width initial-scale=1">   
+        <title> world class restaurantgu</title>
+     <meta name="descrption" content="a world class restaurant">
+     <meta name="author" content="noreen Wamalwa"> 
+        
+
+     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Rochester&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+
+
+     <style>
+        nav bar{
+            width: 100px;
+            float: none;
+        }
+         li{
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            border: 5px solid transparent;
+        }
+        ul{
+            background-color: transparent;
+            padding: 8px 8px;
+            
+        }
+        li{
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-size: medium;
+        }
+        li a{
+          padding: 20px;
+          color: white;
+
+        }
+
+        .intro{
+          width: 100%;
+          height: 100vh;
+          background-position: center;
+          background-image: url(bg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .image-overlay{
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.4);
+          display: flex;
+          justify-content: center;
+          
+          
+        }
+        .intro h1{
+          font-family: 'rochester';
+        	color: hsl(0, 0%, 100%);
+	        font-size: 10em;
+	        font-weight: 400;
+	        margin-top: 0;
+          
+          text-align: center;
+        
+
+        }
+        .intro p{
+          color: hsl(0, 0%, 100%);
+	        font-size: 24px;
+	        font-weight: 700;
+	        margin-top: 250px;
+          text-align: center;
+
+          
+        }
+       .section-title h2{
+          font-family: 'sans-serif';
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 500;
+          font-size: 35px;
+          position: relative;
+          display: inline-block;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+  }
+      .section-title h2:before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+         background-color: rgb(206, 7, 7);
+         bottom: 0;
+         left: 50%;
+        transform: translateX(-50%);
+  }
+
+        #features{
+          padding: 120px 0;
+          padding-left: 20px;
+
+        }
+
+        #features.features-item{
+          margin: 0 20px;
+        }
+        #features img{ 
+          margin: 30px auto 20px;
+        }
+        #features.about-image::before{ 
+          display:block;
+          content: "";
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          bottom: 8px;
+          left: 8px;
+      
+        }
+        #features p{
+          line-height: 24px;
+          margin: 15px 0 30px;
+        }
+        .about{
+          padding: 0;
+          background: #918e8e;
+        }
+        .about-text{
+          padding: 80px 0;
+        }
+        .about-img{
+          background: #141414 url(our\ story.jpg) center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 570px;
+        }
+        .about-par{
+          line-height: 25px;
+          margin: 15px 0 30px;
+          font-weight: 500;
+        }
+        
+        
+        .main-title{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .main-title h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .main-title h1:before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(206, 7, 7);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .menu-column h1{
+  
+    text-transform: uppercase;
+    font-size: 35px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+
+  }
+  .menu-column h1:before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: rgb(206, 7, 7);
+    bottom: 0;
+    left: 20%;
+  
+  }
+  .main{
+    padding: 100px 0 60px 0;
+  }
+  .single-menu{
+    margin: 0 20px 80px;
+  }
+  .single-menu-content{
+    text-transform: capitalize;
+    font-family: 'serif';
+     height: 1.7em; ;
+    
+    
+  }
+  .single-menu-content h2{
+    font-size: 20px;
+  }
+  .single-menu-content span{
+    float: right;
+    font-weight: 700;
+    
+  }
+  .gallery{
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .gallery-item{
+    margin: 0 -15px;
+    padding-bottom: 80px;
+    
+  }
+  .chef{
+    padding: 120px 0;
+  }
+  .chef img{
+    max-width: 550px;
+  }
+  .contact{
+    padding: 100px 0;
+    background: #0e0d0d;
+  }
+  .contact form{
+    padding: 0;
+  }
+  .contact-title{
+    position:relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(0, 0%, 5%);
+    padding: 20px 0;
+  }
+  .contact-title h3::before{
+    position: absolute;
+    content: "";
+    background: hsl(360, 66%, 51%);
+    height: 3px;
+    width: 60px;
+    bottom: 20px;
+    margin-left: 60px;
+    left: 50px;
+    transform: translateX(50%)
+  }
+  .contact-title h2::before{
+    position: absolute;
+    content: "";
+    background: hsl(360, 66%, 51%);
+    height: 3px;
+    width: 80px;
+    bottom: 20px;
+    margin-left: 240px;
+    left: 240px;
+    transform: translateX(50%)
+  }
+  .contact.text-danger{
+    color: rgb(204, 0, 51);
+    text-align: left;
+  }
+
+  label{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'sans-serif';
+    float: left;
+  }
+  .contact.form-control{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: hsl(0, 0%, 80%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 0;
+  }
+  
+  
+  
+  
+  
+  
+
+       
+
+    
+
+        
+     </style>
+    </head>
+<body>
+    <section>
+        
+      <div class="intro">
+     <div class="image">
+     <div class=" image-overlay">
+      <div class="nav bar">
+        <ul>
+            <li> <a href="specials.html">specials</a></li>
+            <li> <a href="about.html">about</a></li>
+            <li> <a href="menu.html">menu</a></li>
+            <li> <a href="chef.html">chef</a></li>
+            <li> <a href="contact.html">contact</a></li>
+        </ul>
+      <h1> amazing experience</h1>
+         <p>Reservations: (254) 740-1202-261</p>
+      
+  </div>
+  </div>  
+    </div>
+    </div>
+    </section>
+    <section>
+        <div id="features" class="text-center">
+         <div class="container">   
+         <div class="section-title">
+            <h2> our specials</h2>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="features-item">
+                  <h3>Fries</h3>
+                  <img src="fries.jpg" class="img-responsive" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="features-item">
+                  <h3>Dessert</h3>
+                  <img src="dessert.jpg" class="img-responsive" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="features-item">
+                  <h3>Crunchies</h3>
+                  <img src="crunchies.jpg" class="img-responsive" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p> 
+         </div>
+        
+        </div>
+        </div>
+    </section>
+    <section>
+        <div id="about">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-md-6 about-img"> </div>
+                <div class="col-xs-12 col-md-3 col-md-offset-1">
+                  <div class="about-text">
+                    <div class="section-title">
+                      <h2>Our Story</h2>
+                    </div>
+                    <div class="about-par">
+                    <p>Ochean de View extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..</p>
+                    <p>Ochean de View extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+    </section>
+
+    <section>
+      <div class="main">
+      <div class="container-fluid">
+        <div class="main-title">
+          <h1>our menu</h1>
+      </div>
+        <div class="row"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="menus"> 
+            <div class="menu-column">
+              <h1>Breakfast & starters</h1>
+              <div class="single-menu">
+                <div class="single-menu-content">
+                  <h2>Tortellini Skewers <span>Ksh 90</span></h2>
+                  <p>Amazingly Delicious!!</p>
+                  </div>
+                </div>
+                <div class="single-menu">
+                  <div class="single-menu-content">
+                    <h3>fried Ravioli <span>Ksh 80</span></h3>
+                    <p>Amazingly delicious!!</p>
+                  </div>
+                </div>
+                <div class="single-menu">
+                  <div class="single-menu-content">
+                    <h4>wild Mushroom Arancini <span>Ksh 300</span></h4>
+                    <p>Amazingly delicious!!</p>
+                  </div>
+                </div>
+                <div class="single-menu">
+                  <div class="single-menu-content">
+                    <h5>Mozzarella Sticks <span>Ksh 200</span></h5>
+                    <p>Amazingly delicious!!</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+ <div class="col-xs-12 col-sm-6"> 
+<div class="menus">
+  <div class="menu-column">
+     <h1>main course</h1></div>
+     <div class="single-menu">
+       <div class="single-menu-content">
+        <h2>Roast Stuffed Chicken <span>ksh 180</span></2>
+         <p> amazingly delicious</p>
+       </div>
+     </div>
+      <div class="single-menu">
+        <div class=" single-menu-content">
+        <h3>chicken & Mushroom pasta <span>ksh 220</span></h3>
+          <p> amazingly delicious</p>
+        </div>
+       </div>
+       <div class="single-menu">
+        <div class="single-menu-content">
+          <h4>beef lasagne <span>ksh 340</span></h4>
+            <p> amazingly delicious</p>
+        </div>
+       </div>
+        <div class="single-menu">
+        <div class="single-menu-content">
+          <h5>chicken goujons <span>ksh 190</span></h5>
+            <p> amazingly delicious</p>
+        </div>
+          </div>
+</div>
+  </div>
+        </div>
+<div class="col-xs-12 col-sm-6">
+<div class="menus">
+<div class="menu-column">
+<h1>dinner</h1></div>
+<div class="single-menu">
+<div class="single-menu-content">
+<h2>Sesame-Ginger Beef <span>$15</span></2>
+<p>  World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..  </p>
+</div>
+</div>
+<div class="single-menu">
+<div class="single-menu-content">
+<h3> Crispy fried chicken <span>$17</span></h3>
+<p> World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..  </p>
+</div>
+</div>
+<div class="single-menu">
+<div class="single-menu-content">
+<h4>mongolian Shrimp & Broccoli <span>$18</span></h4>
+<p> World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..  </p>
+</div>
+</div>
+<div class="single-menu">
+<div class="single-menu-content">
+<h5>spicy Coconut salmond <span>$ 20</span></h5>
+<p> </p> World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust.. 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6">
+<div class="menus">
+  <div class="menu-column">
+  <h1>Desserts</h1></div>
+  <div class="single-menu">
+  <div class="single-menu-content">
+  <h2>Chocolate mud cake <span>$ 11</span></2>
+  <p> World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..  </p>
+  </div>
+  </div>
+  <div class="single-menu">
+  <div class="single-menu-content">
+  <h3>Bourbon-Pecan tart <span>$ 14</span></h3>
+  <p> World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..   </p>
+  </div>
+  </div>
+  <div class="single-menu">
+  <div class="single-menu-content">
+  <h4>texas sheet cake <span>$ 15</span></h4>
+  <p> World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..   </p>
+  </div>
+  </div>
+  <div class="single-menu">
+  <div class="single-menu-content">
+  <h5>vanilla cheesecake <span>$18</span></h5>
+  <p> World class restaurant extends along a private, quiet and beautiful tropical beach. Stay away from the crowd and enjoy the beauty and lust..  </p>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+    </section>
+
+            
+  
+  
+
+    <div class="gallery">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="menu1.jpg" class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="menu2.jpg" class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="menu3.jpg" class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="menu4.jpg" class="img-responsive" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </section>
+    <section>
+        <div class="chef">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="section-title">
+                  <h2>Meet Our Chef</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="chef-img"><img src="chef.jpg" alt="..."></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    </section>
+    <section>
+        <div id="contact" class="text-center">
+            <div class="container text-center">
+              <div class="col-md-4">
+                <div class="contact-title">
+                <h3>Reservations</h3></div>
+                <div class="contact-item">
+                  <p>Please call</p>
+                  <p>(254) 740-120-261</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="contact-title">
+                <h3>Address</h3></div>
+                <div class="contact-item">
+                  <p>1323 Bungoma</p>
+                  <p>Kenya</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="contact-title">
+                <h3>Opening Hours</h3></div>
+                <div class="contact-item">
+                  <p>Mon-Thurs: 10:00 AM - 11:00 PM</p>
+                  <p>Fri-Sun: 11:00 AM - 02:00 AM</p>
+                </div>
+                </div>
+              </div>
+            
+            <div class="container">
+                <div class="contact-title">
+                <h2>Send us a message</h2>
+              </div>
+            </div>
+              <div class="col-md-8 col-md-offset-2">
+                <form name="sentMessage" id="contactForm" novalidate>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div id="success"></div>
+                  <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="footer">
+            <div class="container text-center">
+              <div class="col-md-6">
+                <p>&copy; 2017 &copy All rights reserved. D</p>
+              </div>
+              <div class="col-md-6">
+                <div class="social-handles">
+                    <ul>
+        
+                  </ul>
+            </div>
+        </div>
+      </div>
+      </div>
+
+
+</section>
+</body>
+</html>
